@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则</title>
+</head>
+<body>
+    <script>
+        var reg =new RegExp("^\\w{5,20}$");       //这里要写两个反斜线，要不然就被误以为转义字符
+        var reg1 = /^\w{6,12}$/;
+
+        var user1="aksjdksajd"
+        var user2="asdsadasdsadsadas"
+        var user3='a'
+
+        var flag=reg.test(user1);alert(flag)
+        var flag=reg1.test(user1);alert(flag)
+
+        var flag1=reg.test(user2);alert(flag1)
+        var flag1=reg1.test(user2);alert(flag1)
+
+        var flag2=reg.test(user3);alert(flag2)
+        var flag2=reg1.test(user3);alert(flag2)
+
+    </script>
+
+</body>
+</html>

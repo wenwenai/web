@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>url编码</title>
+</head>
+<body>
+    <script>
+        var test1="湖北武汉"
+        var test2=encodeURI(test1);         //字符串编码
+        document.write(test2+"<br>")
+        var test3=decodeURI(test2)          //字符串解码
+        document.write(test3+"<br>")
+
+        encodeURIComponent()        //字符串编码（比上面的函数能编码更多，比如/:等）
+        decodeURIComponent()        //字符串解码
+
+        var num1="123asdas"
+        var num2=parseInt(num1)
+        document.write(num2+1+"<br>");        //parseInt表示逐一判断字符串是否为数字，直到匹配到不是数字为止，并把匹配到的数字转成number，如果是浮点数就转化成整数，舍弃后面的小数
+        var num3="123.456ab"
+        var num4=parseFloat(num3)
+        document.write(num4)                //parsefloat同上，但是如果匹配到浮点数就返回浮点数
+
+        //eval函数会把字符串当做js代码执行
+        var poc = "alert('123')"
+        eval(poc)
+
+
+
+    </script>
+</body>
+</html>

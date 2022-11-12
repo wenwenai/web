@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>dom文本</title>
+		<style type="text/css" >
+			/**{*/
+			/*	padding: 0;*/
+			/*	margin: 0;*/
+			/*}*/
+			body{
+				display: flex;
+			}
+
+			#srk{
+				width: 600px;
+				height: 600px;
+				border: 1px solid red;
+			}
+			#sr {
+				width: 300px;
+				height: 300px;
+				margin: 0 auto;
+			}
+			#box{
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+				margin: 0 auto;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var sr =document.getElementById("sr");
+				var tj =document.getElementById("tj");
+				var li =document.getElementById("li");
+				var span=document.getElementsByTagName("span")
+				var inp=document.getElementsByTagName('input')
+				var i=1	
+					tj.onclick =function(){						
+							if(sr.value==""){
+								alert('请输入内容！')
+							}else{
+								console.log(sr.value)
+
+							for (i;i<inp.length;){
+								inp[i].value=sr.value;
+								i=i+1;
+								console.log(i)
+								break;
+							}
+							if(i>inp.length-2){
+								alert("我们将覆盖第一个留言！")
+								i=1
+							}
+						}	
+					}
+//					button.onclick=function (){
+//								for(j=0;j<Aid.length;j++){
+//									button[j].style.display='none';
+//								}
+//							button[this.id].style.display='block';
+//					}
+				
+					
+				}
+			
+		</script>
+	</head>
+	<body>
+	<div id="srk">
+		<p>
+			<textarea name="" rows="" cols="" id="sr"></textarea>
+			<input type="button" id="tj" value="提交" />
+		</p>
+	</div>
+
+		
+		
+		
+		<div id="srk">
+			<form action="">
+			<ul>
+				<li><input type="text"  value="" /></li>
+				<li><input type="text"  value="" /></li>
+				<li><input type="text"  value="" /></li>
+				<li><input type="text"  value="" /></li>
+				<li><input type="text"  value="" /></li>
+				<li><input type="text"  value="" /></li>
+				<li><input type="text"  value="" /></li>
+				<li><input type="text"  value="" /></li>
+				<li><input type="text"  value="" /></li>
+			</ul>
+				<input type="reset" value="重置"id="stop">
+			</form>
+		</div>
+		
+	</body>
+</html>

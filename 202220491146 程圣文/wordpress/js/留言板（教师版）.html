@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		P{
+			background: brown;
+			border: 1px solid black;
+		}
+	</style>
+	<script type="application/javascript">
+		window.onload=function(){
+			var sr =document.querySelector("#sr");
+			var tj =document.querySelector("#tj");
+			var Div=document.querySelector("#Div");
+			var P1=document.querySelectorAll("p");
+
+			tj.onclick=function(){
+				var p =document.createElement("p");
+				p.innerHTML=sr.value+"<button>删除</button>"
+				Div.insertBefore(p,P1[0]);
+
+//					window.localStorage.setItem("TOP1", sr.value);
+
+				var oButton=document.querySelectorAll("button");
+				oButton[0].onclick=function(){
+					Div.removeChild(this.parentNode);
+				}
+			}
+//				var p0=window.localStorage.getItem("TOP1");
+//				var p =document.createElement("p");
+//					p.innerHTML=p0+"<button>删除</button>"
+//					Div.insertBefore(p,P1[0]);
+		}
+	</script>
+</head>
+<body>
+
+<div id="Div">
+
+</div>
+
+<textarea name="" rows="" cols="" id="sr"></textarea><br />
+<input type="button" id="tj" value="提交" />
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>this函数</title>
+		
+		<style type="text/css">
+			.cont{
+				height: 200px;
+				width: 200px;
+				display: none;
+				border: 1px solid red;
+			}
+		</style>
+		
+		
+		<script type="text/javascript">
+			window.onload=function(){
+				var Aid =document.getElementsByTagName('input');
+				var Cont =document.getElementsByClassName('cont');
+				
+				for(i=0;i<Aid.length;i++){
+					Aid[i].id=i;
+					Aid[i].onclick=function(){
+						for(j=0;j<Aid.length;j++){
+							Cont[j].style.display='none';
+						}
+					Cont[this.id].style.display='block';
+					}
+					
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" name="id1" id="id1" value="1" />
+		<input type="button" name="id2" id="id2" value="2" />
+		<input type="button" name="id3" id="id3" value="3" />
+		<input type="button" name="id4" id="id4" value="4" />
+		<input type="button" name="id5" id="id5" value="5" />
+		
+		
+		<div class="cont">
+			1
+		</div>
+		<div class="cont">
+			2
+		</div>
+		<div class="cont">
+			3
+		</div>
+		<div class="cont">
+			4
+		</div>
+		<div class="cont">
+			5
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,140 @@
+/*
+ 优先级： ID选择器（100分） 类选择器（10分）  标签选择器（1分）
+ 
+ */
+
+/*全局设定*/
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration:none ;
+	/*清除下划线*/
+}
+
+#logo{
+	padding: 20px 0 0 20px;
+}
+
+
+/*首页背景图片设定*/
+.taitou{
+	position: relative;
+	height: 181px;
+	/*border: 1px solid red;*/
+	background: url(../img/cat/header.jpg);			/*加载背景图片*/
+	background-size:100% 181px;/*把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。*/
+	margin: 0 auto;
+}
+
+/*文字设定*/
+.taitou_dh{
+	width: 860px;
+	height: 28px;
+	/*border: 1px solid blue;*/
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	color: yellow;
+	/*文本行高*/
+	line-height: 28px;
+	display:flex;
+	justify-content: space-around;	
+	/*沿着主轴方向 间隔 对齐，头尾有间距。*/
+}
+
+
+a{
+	color: white;
+	/*a标签的所有颜色设置为白色*/
+}
+
+.home{
+	width: 100%;
+	/*border: 1px solid red;*/
+	margin:  auto;
+}
+
+
+.one{
+	width: 100%;
+	/*border: 1px solid red;*/
+	display: flex;
+}
+
+
+/*第一行文字框架*/
+#one_1{
+	
+	/*border: 1px solid red;*/	
+	height: 22px;
+	width: 100%;
+	display: flex;
+}
+
+
+/*第二行图片*/
+#one_2
+{
+	width: 120px;
+	height: 120px;
+	padding: 10px;
+	border: 1px solid #333;	
+	margin: 0 0 0 100px;
+}
+
+/*文字五个*/
+#word_1
+{
+	
+	/*border: 1px solid red;*/	
+	height: 22px;
+	margin: 0 0 0 120px;
+	color: gold;
+}
+
+#word_2
+{
+	
+	/*border: 1px solid red;*/	
+	height: 22px;
+	margin: 0 0 0 180px;
+	color: gold;
+}
+
+#word_3
+{
+	/*border: 1px solid red;*/	
+	height: 22px;
+	margin: 0 0 0 140px;
+	color: gold;
+}
+
+#word_4
+{
+	/*border: 1px solid red;	*/
+	height: 22px;
+	margin: 0 0 0 160px;
+	color: gold;
+}
+
+#word_5
+{
+	/*border: 1px solid red;*/	
+	height: 22px;
+	margin: 0 0 0 160px;
+	color: gold;
+}
+
+
+
+
+#footer{
+	width: 35%;
+	margin: 0 auto;
+	/*border: 1px solid red;	*/
+}
+#footer_1{
+	width: 28%;
+	margin: 0 auto;
+	/*border: 1px solid red;*/	
+}

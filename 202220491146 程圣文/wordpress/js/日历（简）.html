@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日历</title>
+    <style type="text/css">
+        .box{
+            width: 400px;
+            height: 530px;
+            /*border: 1px solid red;*/
+            margin: 0 auto;
+            background: whitesmoke;
+
+        }
+		.box1{
+			display: flex;
+
+		}
+       
+        .boxs{
+        	width: 80px;
+        	height: 80px;
+        	/*border: 1px solid green;*/
+        	margin: 10px;
+
+			background: black;
+			color: white;
+        }
+        .boxs p{
+        	
+        	text-align: center;
+        }
+        .boxs:hover{
+        	background: whitesmoke;
+        	color: palevioletred;
+			border: 1px solid black;
+        }
+        #run1{
+        	/*border: 1px solid royalblue;*/
+        	width: 289px;
+        	height: 190px;
+        	margin:10px 50px;
+        	outline-style:outset;
+			outline-color:white;
+			/*outline-width:1px;*/
+			float: bottom ;
+        }
+    </style>
+    
+    <script type="text/javascript">
+		window.onload=function (){
+    	var run =document.getElementById("run1")
+    	var day1=document.getElementById("day1")
+    	var day2=document.getElementById("day2")
+    	var day3=document.getElementById("day3")
+    	var day4=document.getElementById("day4")
+    	var day5=document.getElementById("day5")
+    	var day6=document.getElementById("day6")
+    	var day7=document.getElementById("day7")
+    	var day8=document.getElementById("day8")
+    	var day9=document.getElementById("day9")
+    	var day10=document.getElementById("day10")
+    	var day11=document.getElementById("day11")
+    	var day12=document.getElementById("day12")
+    	
+			day1.onmouseover=function (){
+				run.innerHTML="<h2>一月</h2><p>预祝您除夕快乐！</p><p>团团圆圆！！</p>"
+			}
+			day1.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day2.onmouseover=function (){
+				run.innerHTML="<h2>二月</h2><p>春节快乐！</p><p>放炮喽！！！</p>"
+			}
+			day2.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day3.onmouseover=function (){
+				run.innerHTML="<h2>三月</h2><p>春分、植树节、妇女节！</p><p>上班使我“快乐”！</p>"
+			}
+			day3.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day4.onmouseover=function (){
+				run.innerHTML="<h2>四月</h2><p>愚人节来了，小心你的兄弟！</p><p>今天无论他说什么我都不信！</p>"
+			}
+			day4.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day5.onmouseover=function (){
+				run.innerHTML="<h2>五月</h2><p>青年节、劳动节；劳动青年最光荣！</p><p>80!80!</p>"
+			}
+			day5.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day6.onmouseover=function (){
+				run.innerHTML="<h2>六月</h2><p>儿童节、父亲节；父与子！</p><p>父亲带娃，活着就行！</p>"
+			}
+			day6.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day7.onmouseover=function (){
+				run.innerHTML="<h2>七月</h2><p>建党节！</p><p>背负着民族的希望！</p>"
+			}
+			day7.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day8.onmouseover=function (){
+				run.innerHTML="<h2>八月</h2><p>建军节</p><p>八月秋高风怒号！</p>"
+			}
+			day8.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day9.onmouseover=function (){
+				run.innerHTML="<h2>九月</h2><p>中秋节！</p><p>九九八十一！</p>"
+			}
+			day9.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day10.onmouseover=function (){
+				run.innerHTML="<h2>十月</h2><p>国庆节、重阳节！</p><p>十一黄金周想好在那条马路上堵车了么？</p>"
+			}
+			day10.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day11.onmouseover=function (){
+				run.innerHTML="<h2>十一月</h2><p>光棍节</p><p>双十一！双十一！！！</p>"
+			}
+			day11.onmouseout=function (){
+				run.innerHTML=""
+			}
+			day12.onmouseover=function (){
+				run.innerHTML="<h2>十二月</h2><p>圣诞节</p><p>下雪了！</p>"
+			}
+			day12.onmouseout=function (){
+				run.innerHTML=""
+			}
+
+		}
+    </script>
+</head>
+<body>
+    <div class="box">
+		<div class="box1">
+			<div class="boxs" id="day1">
+				<p>1月</p>
+				<p>一月</p>
+			</div>
+			<div class="boxs" id="day2">
+				<p>2月</p>
+				<p>二月</p>
+			</div>
+			<div class="boxs" id="day3">
+				<p>3月</p>
+				<p>三月</p>
+			</div>
+			<div class="boxs" id="day4">
+				<p>4月</p>
+				<p>四月</p>
+			</div>
+		</div>
+		<div class="box1">
+			<div class="boxs" id="day5">
+				<p>5月</p>
+				<p>五月</p>
+			</div>
+			<div class="boxs" id="day6">
+				<p>6月</p>
+				<p>六月</p>
+			</div>
+			<div class="boxs" id="day7">
+				<p>7月</p>
+				<p>七月</p>
+			</div>
+			<div class="boxs" id="day8">
+				<p>8月</p>
+				<p>八月</p>
+			</div>
+		</div>
+		<div class="box1">
+			<div class="boxs" id="day9">
+				<p>9月</p>
+				<p>九月</p>
+			</div>
+			<div class="boxs" id="day10">
+				<p>10月</p>
+				<p>十月</p>
+			</div>
+			<div class="boxs" id="day11">
+				<p>11月</p>
+				<p>十一月</p>
+			</div>
+			<div class="boxs" id="day12">
+				<p>12月</p>
+				<p>十二月</p>
+			</div>
+		</div>
+			<div id="run1">
+
+			</div>
+    </div>
+</body>
+</html>

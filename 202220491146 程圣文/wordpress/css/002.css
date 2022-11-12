@@ -1,0 +1,161 @@
+/*全局设定*/
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration:none ;
+}
+/*body设定*/
+.a{
+	width: 1100px;
+	margin: auto;
+	
+}
+
+/*a{
+	border: 1px solid red;
+}*/
+
+/*.p_box{
+	border: 1px solid red;
+	/*将行块标签*/
+	/*display: inline-block;
+}
+*/
+
+/*主页头部黑框框*/
+#taitou
+{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 50px;
+	overflow: hidden;			/*设置超出部分隐藏 */
+	background-color: #2894FF;
+}
+
+#taitou a{
+	color: black;
+}
+
+/*logo图*/
+#logo
+{
+	/*border: 1px solid red;*/
+	float: left;
+}
+
+/*右上方标题格式*/
+#biaoti
+{
+	/*border: 1px solid red;*/
+	width: 350px;
+	height: 50px;			/*ctrl+?快速注释*/
+	float:right;
+	padding-right:20px;
+	/*文本行高*/
+	line-height: 50px;
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+}
+
+/*导语栏目*/
+.daoyu{
+	outline-style:outset;
+	outline-color:#FFFFFF;
+	outline-width:2px;
+	width: 98%;
+	/*border: 1px solid red;*/
+	margin:2px 11px 0 11px;
+	/*height: 200px;*/
+	display: flex;			
+	align-items: center;		/*居中对齐*/
+}
+
+/*导语的文字排版*/
+.dy-wz{
+	padding: 0 0 0 20px;
+}
+
+/*磁湖box*/
+.cihu{
+	width: 95%;
+	/*border: 1px solid red;*/
+	margin: 10px 11px 0 30px;
+	display: flex;
+}
+
+/*磁湖的文字排版*/
+.ch-wz{
+	padding: 1px 0 0 20px;
+	
+}
+
+/*li标签去掉黑点*/
+li{
+	list-style: none;
+}
+
+/*黄石风景名胜路线图*/
+.fjms{
+	width: 98%;
+	border: 3px solid #2894FF;
+	margin: 10px 11px 0 11px;
+	position: relative;
+	
+}
+
+/*风景名胜背景图片（线路图）*/
+#bj{
+	/*border: 1px solid red;*/
+	display: flex;	
+}
+
+/*第一行图片*/
+#diyi{
+	/*border: 1px solid red;*/
+	position:absolute;	/*设置绝对位置*/
+	left: 40px;
+	top: 80px;
+}
+
+/*第二行图片*/
+#dier{
+	/*border: 1px solid red;*/
+	position:absolute;	/*设置绝对位置*/
+	left: 230px;
+	top: 310px;
+}
+
+/*第三行图片*/
+#disan{
+	/*border: 1px solid red;*/
+	position:absolute;	/*设置绝对位置*/
+	left: 40px;
+	top: 530px;
+}
+
+/*第四行图片*/
+#disi{
+	/*border: 1px solid red;*/
+	position:absolute;	/*设置绝对位置*/
+	left: 620px;		/*距离右边框*/
+	top: 750px;		/*距离上边框*/
+}
+
+/*页脚结尾*/
+.yw{
+	/*border: 1px solid red;*/
+	background-color: #2894FF;
+	height: 100px;
+	align-items: center;
+	padding:16px 0  0 30px;
+	display: flex;	
+	margin: 10px 0 0 0 ;
+	
+}
+
+/*页尾版权声明*/
+.yw-js{
+	/*border: 1px solid red;*/		
+	padding: 5px 0 0 20px;
+}
+

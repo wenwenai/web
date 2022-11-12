@@ -1,0 +1,10 @@
+.text_sx {
+	
+	word-spacing: 10px;		/*每个词语间距*/
+	
+}
+.video_sp video{			/*设置播放器的长宽高*/
+	width: 600px;
+	height:400px ;
+}
+

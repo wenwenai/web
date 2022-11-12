@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>测试实例</title>
+
+</head>
+
+
+<body>
+<script>
+    function num(){
+        var num1=parseInt(Math.random()*40+7)
+        return document.write('<h2>'+'请'+num1+'号同学上台发言！'+'</h2>')
+    }
+    num()
+</script>
+
+<br>
+
+<!---------------------------------------------------------倒计时-------------------------------------------------------------------------->
+<h1 id="time6">
+    <span></span>天
+    <span></span>小时
+    <span></span>分
+    <span></span> 秒
+</h1>
+<script>
+    var time5=document.getElementById('time6').getElementsByTagName('span')
+    function time(){
+        var time1=new Date().getTime();       //获取当前时间
+        var time3=new Date(2023,10,1,0,0,0).getTime();
+        var time4=(time3-time1)/1000;
+        var day=parseInt(time4/86400)
+        var hour=parseInt(time4%86400/3600)
+        var mins=parseInt(time4%86400%3600/60)
+        var secs=parseInt(time4%60)
+       // return document.write('<h2>'+day+'天'+hour+'小时'+mins+'分'+secs+'秒'+'<h2>')
+        time5[0].innerHTML=day;
+        time5[1].innerHTML=hour;
+        time5[2].innerHTML=mins;
+        time5[3].innerHTML=secs;
+    }
+    setInterval("time()","1000")
+</script>
+
+<!---------------------------------------------------日历-------------------------------------------------------------------->
+
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验报告源码</title>
+<!--    <script type="text/javascript">-->
+<!--        var val = prompt('请输入数字：');-->
+<!--        var val1=Math.abs(val)-->
+<!--        alert(val+"的绝对值是"+val1)-->
+<!--    </script>-->
+
+<!--    <style type="text/css">-->
+<!--        td{-->
+<!--            border: 1px solid black;-->
+<!--        }-->
+<!--    </style>-->
+
+<!--    <script type="text/javascript">-->
+<!--        document.write("<table  align='center'>");-->
+<!--        //1.完成基本的for循环嵌套，展示乘法表-->
+<!--        for (var i = 1; i <= 9 ; i++) {-->
+<!--            document.write("<tr>");-->
+<!--            for (var j = 1; j <=i ; j++) {-->
+<!--                document.write("<td>");-->
+<!--                document.write(j + " * " + i + " = " + (i*j) +"&nbsp;");-->
+<!--                document.write("</td>");-->
+<!--            }-->
+<!--            document.write("</tr>");-->
+<!--        }-->
+<!--        document.write("</table>");-->
+<!--    </script>-->
+
+</head>
+<body>
+
+<!--<script>-->
+<!--    alert("欢迎进入javascript的奇妙世界！")-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    document.write('这是我的第一个JavaScript页面');-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    //时间-->
+<!--    document.write('<br/>');-->
+<!--    var now=new Date();-->
+<!--    document.write(now);-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    var r=10;-->
+<!--    var pi=3.14;-->
+<!--    var s;-->
+<!--    document.write(s=pi*r*r);-->
+<!--</script>-->
+
+
+
+<!--<script>-->
+<!--    var family_name="cheng"-->
+<!--    var given_name="shengwen"-->
+<!--    document.write('姓名：'+family_name+given_name+'<br/>')-->
+<!--    var sfz="421022199812264537"-->
+<!--    document.write('出生年月：'+sfz.slice(6,10)+'年'+sfz.slice(10,12)+'月'+sfz.slice(12,14)+'日')-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    var now=new Date();-->
+<!--    var now1=now.getFullYear();-->
+<!--    //var now1=1900;-->
+<!--    //document.write(now1);               //显示年份-->
+<!--    if ((now1%100!=0 && now1%4==0 ) || ( now1%400==0)){-->
+<!--        document.write(now1+"是闰年");-->
+<!--    }else {-->
+<!--        document.write(now1+"不是闰年");-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    var name="WangFeng";-->
+<!--    var sex;-->
+<!--    var age=null;-->
+<!--    document.write(typeof(name)+"<br\>");-->
+<!--    document.write(typeof(sex)+"<br\>");-->
+<!--    document.write(typeof(age)+"<br\>");-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    var cars=["Audi","BMW","Benz","Volkswagen","Volvo","Chery"];-->
+<!--    document.write(cars)-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    var grade = prompt("请输入您的分数：");-->
+<!--    var grade1 =grade/10;-->
+<!--    if (grade>=90){-->
+<!--        alert("你的成绩是：A,你真棒！")}-->
+<!--       else if (grade>=80){-->
+<!--            alert("你的成绩是：B,也不错！")}-->
+<!--         else if (grade>=70){-->
+<!--                alert("你的成绩是：C,再努努力就更好了！")}-->
+<!--             else if (grade>=60){-->
+<!--                    alert("你的成绩是：D,刚及格，要继续加油啊！")}-->
+<!--                else alert("你的成绩是：E,要努力啦，不然就掉队了！")-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    var grade = prompt("请输入您的分数：");-->
+<!--    switch (grade>=0&&grade<=100)-->
+<!--    {-->
+<!--        case true:-->
+<!--            switch (parseInt(grade/10))-->
+<!--            {-->
+<!--                case 10:-->
+<!--                case 9:-->
+<!--                    alert("你的成绩是：A,你真棒！");-->
+<!--                    break;-->
+<!--                case 8:-->
+<!--                    alert("你的成绩是：B,也不错！");-->
+<!--                    break;-->
+<!--                case 7:-->
+<!--                    alert("你的成绩是：C,再努努力就更好了！");-->
+<!--                    break;-->
+<!--                case 6:-->
+<!--                    alert("你的成绩是：D,刚及格，要继续加油啊！");-->
+<!--                    break;-->
+<!--                default:-->
+<!--                    alert("你的成绩是：E,要努力啦，不然就掉队了！");-->
+<!--                    document.write(grade)-->
+<!--                    break;-->
+<!--            }-->
+<!--            break;-->
+<!--        default:-->
+<!--            alert("成绩输入错误！")-->
+<!--            break;-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    //测试parseInt函数-->
+<!--    var grade = prompt("请输入您的分数：");-->
+<!--    var grade1=parseInt(grade/10)-->
+<!--    var grade2=grade/10-->
+<!--    document.write(grade1+'<br/>')-->
+<!--    document.write(grade2)-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    var i=0;-->
+<!--    while(i<10){-->
+<!--        document.write('<li>'+i+'</li>');-->
+<!--        i++;-->
+<!--    }-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    var i=1;-->
+<!--    var a=1;-->
+<!--    do {-->
+<!--        document.write((a=a*i)+"<br/>");-->
+<!--        i++;-->
+<!--    }while (i<=10)-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    var i=1;-->
+<!--    for (j=1;j<=10;j++){-->
+<!--        document.write((i=i*j)+"<br/>");-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--<script>-->
+
+<!--    var a='*',i,j;-->
+<!--    document.write(a)-->
+<!--    for (i=0;i<9;i++){-->
+<!--        document.write("<br\>")-->
+
+<!--        // document.write("i")-->
+<!--        for (j=1;j<17;j++){-->
+<!--            document.write(a)-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    var a = 9-->
+<!--    for(var b = 1; b <= a; b++) {-->
+<!--        for(var c = (a - b) * 2; c >= 0; c&#45;&#45;) {-->
+<!--            document.write("&nbsp");-->
+<!--        }-->
+<!--        for(var d = 1; d <= b * 2 - 1; d++) {-->
+<!--            document.write("&nbsp");-->
+<!--            document.write("*" );-->
+<!--        }-->
+<!--        document.write("<br/>");-->
+<!--    }-->
+<!--</script>-->
+
+<script>
+    var arr = [1,2,3,4,5,6,7,8,9,0,10,11,12,13,14,15,16,17,18,19,20,21,23,22];
+    function mainJs(a,b) {
+        a = parseInt(a);
+        b = parseInt(b);
+        //请在此处编写代码
+        /*********begin*********/
+
+        var num1=new Array(a);
+        for(var z=0;z<a;z++){
+            num1[z]=new Array(b);
+        }
+        var num2=0
+        for(var i=0;i<a;i++){
+            for(var j=0;j<b;j++){
+                num1[i][j]=arr[num2];
+                num2++;
+            }
+        }
+
+        return console.log(num1)
+        /*********end*********/
+    }
+    mainJs(6,4)
+</script>
+
+<script>
+    var btu1=document.getElementById('btu')
+    var bg1=document.getElementById('bg')
+    var onoff=true;
+    btu1.onclick=function (){
+        if(onoff){
+            bg1.style.display='block'
+            btu1.value='隐藏列表'
+        } else{
+            bg1.style.display='none'
+            btu1.value='显示列表'
+        }
+        onoff=!onoff;
+    }
+
+
+</script>
+</head>
+
+<body>
+<input id="btu" type="button"value="显示">
+<div id="bg" style="display: none">
+    <ul>
+        <li>百度</li>
+        <li>qq</li>
+        <li>搜狗</li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>

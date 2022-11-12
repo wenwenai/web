@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <style type="text/css">
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<p>登录账号: <input type="text" id="userName" />
+    <span id="testUserName"></span>会员登录账号，一旦注册成功，不可修改
+</p>
+<p>密码: <input type="password" id="pass" />
+    <span id="testPass"></span>
+</p>
+<p>确认密码: <input type="password" id="pass2" />
+    <span id="testPass2"></span> 密码由6-12个英文字母(区分大小写)或数字组成
+</p>
+<p>采购商名称: <input type="text"  />店铺公司或机构名称</p>
+<p>联系人: <input type="text" /></p>
+<p>手机: <input type="text" id="phone" />
+    <span id="testPhone"></span> 用于工作人员和您联系，并接收账号开通短信
+</p>
+<p>邮箱: <input type="text" id="mail" /><span id="testMail"></span></p>
+<script>
+    var testUserName=document.getElementById("testUserName");
+    var userName =document.getElementById("userName");
+    var pass=document.getElementById("pass");
+    var testpass=document.getElementById("testPass");
+    var pass2=document.getElementById("pass2");
+    var testPass2=document.getElementById("testPass2");
+    var phone=document.getElementById("phone");
+    var testPhone=document.getElementById("testPhone");
+    var mail=document.getElementById("mail");
+    var testMail=document.getElementById("testMail");
+    var zUser=/^\D\w{5,15}$/                       //用户名
+    var zPass=/([0-9]|[A-z]){4,15}$/                //密码
+    var zPhone=/^1[34578][0-9]{9}$/                //手机
+    var zMail=/^\w+@\w+\.(com|cn|net|com\.cn)$/        //邮箱
+    userName.onblur=function (){
+        if(zUser.test(userName.value)){
+            testUserName.innerHTML=""
+        }else{
+            testUserName.innerHTML="设置失败！"
+        }
+    }
+    pass.onblur=function (){
+        if(zPass.test(pass.value)){
+            testpass.innerHTML=""
+        }else{
+            testpass.innerHTML="密码不符合要求"
+        }
+        pass2.onblur=function (){
+            if(pass.value==pass2.value){
+                testPass2.innerHTML=""
+            }else {
+                testPass2.innerHTML="密码与前面不一致"
+            }
+        }
+    }
+    phone.onblur=function (){
+        if (zPhone.test(phone.value)){
+            testPhone.innerHTML=""
+        }else {
+            testPhone.innerHTML="手机格式错误！"
+        }
+    }
+
+    mail.onblur=function (){
+        if (zMail.test(mail.value)){
+            testMail.innerHTML=""
+        }else {
+            testMail.innerHTML="邮箱格式错误！"
+        }
+    }
+</script>
+</body>
+</html>

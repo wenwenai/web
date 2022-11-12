@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验报告5</title>
+  <script type="text/javascript">
+	// window.onload=function(){
+//		//函数表达式
+//		var w =function(a,b){
+//			return a+b;
+//		}
+//		//函数声明
+//		function w1(a,b){
+//			return a+b;
+//		}
+//		console.log(w(1,2));
+//		console.log(w1(2,4))
+	
+
+  </script>
+
+
+</head>
+<body>
+<!--	<script>-->
+<!--	var a1 = prompt("请输入您的第一个数：");-->
+<!--	var a2 = prompt("请输入您的第二个数：");-->
+
+<!--	function w1(a,b){-->
+<!--			return a+b;-->
+<!--		}-->
+<!--	console.log(w1(Number(a1),Number(a2)))-->
+
+<!--	</script>-->
+
+
+<!--<script type="text/javascript">-->
+
+<!--    function getSum(){-->
+<!--        //document.write(arguments)-->
+<!--        //console.log(arguments)-->
+<!--        var a=0;-->
+<!--        for (var i=0;i<arguments.length;i++){-->
+<!--            console.log(a)-->
+<!--            console.log(i)-->
+<!--            a=a+arguments[i];-->
+<!--        }-->
+<!--        console.log(a)-->
+<!--    }-->
+<!--    var val = prompt('请输入你想相加的数字，数字之间使用,相隔：');-->
+<!--    var text =  val.split(",").map(Number)-->
+<!--    getSum(text)-->
+<!--</script>-->
+
+
+
+
+<!--<script type="text/javascript">-->
+<!--    function getSum(d){-->
+<!--        var a=0;-->
+<!--        for (var i=0;i<d.length;i++){-->
+<!--            //console.log(d[i])-->
+<!--            a=a+d[i];-->
+<!--        }-->
+<!--        console.log(a)-->
+<!--    }-->
+<!--    var val = prompt('请输入你想相加的数字，数字之间使用,相隔：');-->
+<!--    var text =  val.split(",").map(Number)-->
+<!--    getSum(text);-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    var inpu=prompt("请输入一个数字:")-->
+<!--    function get(){-->
+<!--        if (!isNaN(parseFloat(inpu)) && isFinite(inpu) === true){   \\isFinite判断是否是无穷大的-->
+<!--            if (inpu%2==0){-->
+<!--                return  console.log("偶数")-->
+<!--            }else {-->
+<!--                return console.log("奇数")-->
+<!--            }-->
+<!--        }else {-->
+<!--            return alert("参数不正确")-->
+<!--        }-->
+<!--    }-->
+<!--    get(inpu)-->
+<!--</script>-->
+
+<!--------------------------------------------------------------------------------------------------->
+<!--<h2>大小写转换</h2>-->
+<!--<p>原数据：<input id="old" type="text"></p>-->
+<!--<p>-->
+<!--    操  作：-->
+<!--    <input type="button" value="转大写" onclick="deal('upper')">-->
+<!--    <input type="button" value="转小写" onclick="deal('lower')">-->
+<!--</p>-->
+<!--<p>新数据：<input id="new" type="text"></p>-->
+
+<!--<script type="text/javascript">-->
+<!--    function deal (pos){-->
+<!--        var OLD=document.getElementById("old").value;         //接收原始数据-->
+
+<!--        //使用三目运算-->
+<!--        //pos=="upper"?OLD=OLD.toUpperCase():OLD=OLD.toLowerCase()-->
+
+<!--        //使用if判断-->
+<!--        if(pos=="upper"){-->
+<!--            OLD=OLD.toUpperCase()-->
+<!--        }-->
+<!--        if (pos=='lower'){-->
+<!--            OLD=OLD.toLowerCase()-->
+<!--        }-->
+
+<!--        //使用switch语句-->
+<!--        // switch (pos){-->
+<!--        //     case 'upper':-->
+<!--        //         OLD=OLD.toUpperCase()-->
+<!--        //         break;-->
+<!--        //     case 'lower':-->
+<!--        //         OLD=OLD.toLowerCase()-->
+<!--        // }-->
+<!--        document.getElementById("new").value=OLD    //输出更改后的数据-->
+<!--    }-->
+<!--</script>-->
+<!--------------------------------------------------------------------------------------------------->
+
+
+
+<!--<script>-->
+<!--    window.onload=function (){-->
+<!--        var a =confirm("请点击确认或者取消，如确认则在控制台输出prompt中的语句"),b;-->
+<!--        if (a ==true){-->
+<!--            b=prompt("请输入一句话，并输出在控制台");-->
+<!--            console.log(b)-->
+<!--        }else {-->
+<!--            alert("退出！")-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+
+
+<!--    <p>整数1：<input id="num1" type="text"></p>-->
+<!--    <p>整数2：<input id="num2" type="text"></p>-->
+<!--    <p>-->
+<!--        <input type="button" value="相加" onClick="calc('add')">-->
+<!--            <input type="button" value="相减" onClick="calc('sub')">-->
+<!--                <input type="button" value="相乘" onClick="calc('mul')">-->
+<!--                    <input type="button" value="相除" onClick="calc('div')">-->
+<!--    </p>-->
+<!--    <p>结果：<input id="result" type="text" readOnly></p>-->
+<!--    <script type="text/javascript">-->
+<!--        function calc(func){-->
+<!--        var Nunm1=document.getElementById('num1').value;-->
+<!--        var Nunm2=document.getElementById('num2').value;-->
+<!--        var Nnum3;-->
+<!--        switch (func){-->
+<!--        case 'add':-->
+<!--        Nnum3=parseFloat(Nunm1)+parseFloat(Nunm2)-->
+<!--        break;-->
+<!--        case 'sub':-->
+<!--        Nnum3=parseFloat(Nunm1)-parseFloat(Nunm2)-->
+<!--        break;-->
+<!--        case 'mul':-->
+<!--        Nnum3=parseFloat(Nunm1)*parseFloat(Nunm2)-->
+<!--        break;-->
+<!--        case 'div':-->
+<!--        Nnum3=parseFloat(Nunm1)/parseFloat(Nunm2)-->
+<!--        break;-->
+<!--    }-->
+<!--        document.getElementById('result').value=Nnum3;-->
+<!--    }-->
+<!--</script>-->
+
+    <p>整数1：<input id="num1" type="text"></p>
+    <p>整数2：<input id="num2" type="text"></p>
+    <p>
+        <input type="button" value="相加" onclick="calc(add)">
+        <input type="button" value="相减" onclick="calc(sub)">
+        <input type="button" value="相乘" onclick="calc(mul)">
+        <input type="button" value="相除" onclick="calc(div)">
+    </p>
+    <p>结果：<input id="result" type="text" readonly></p>
+    <script type="text/javascript">
+            function add(){
+                onclick1=document.getElementById("num1").value
+                onclick2=document.getElementById("num2").value
+               return  document.getElementById("result").value=parseFloat(onclick1)+parseFloat(onclick2)
+            }
+            function sub(){
+                onclick1=document.getElementById("num1").value
+                onclick2=document.getElementById("num2").value
+                return  document.getElementById("result").value=parseFloat(onclick1)-parseFloat(onclick2)
+            }
+            function mul(){
+                onclick1=document.getElementById("num1").value
+                onclick2=document.getElementById("num2").value
+                return  document.getElementById("result").value=parseFloat(onclick1)*parseFloat(onclick2)
+            }
+            function div(){
+                onclick1=document.getElementById("num1").value
+                onclick2=document.getElementById("num2").value
+                return  document.getElementById("result").value=parseFloat(onclick1)/parseFloat(onclick2)
+            }
+            function calc(get){
+               return get()
+            }
+    </script>
+</body>
+</html>

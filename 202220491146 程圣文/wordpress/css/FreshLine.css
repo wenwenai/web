@@ -1,0 +1,249 @@
+/*全局设定*/
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration:none ;
+	/*清除下划线*/
+
+}
+
+
+
+/*客服二维码设置*/
+.kf{
+	position: fixed;
+	right: 0;			/*靠右*/
+	bottom: 20%;		/*距离下边百分之20%*/
+	text-align: center;
+	z-index: 999;
+
+}
+
+/*抬头*/
+.title_1
+{
+	position: fixed;
+	/*border: 1px solid red;*/
+	background: white;
+	/*position: relative;	*/
+	display: flex;
+	width: 100%;
+	opacity: 0.80;			/*透明度*/
+	/*min-width: 768px;*/
+	z-index: 999;			/*z-index值较大的元素将叠加在z-index值较小的元素之上*/
+}
+
+/*抬头LOGO*/
+.title_lg
+{
+	width: 200px;
+	/*border: 1px solid red;*/
+	padding: 0 0 0 100px;
+}
+
+/*抬头样式*/
+.title_a
+{
+	position: fixed;
+	/*border: 1px solid red;*/
+	/*position: absolute;*/
+	/*right: 20%;					!*靠右*!*/
+	/*bottom: 30px;				!*靠右下*!*/
+	width: 100%;
+	height: 66px;
+	padding: 0 0 0 400px;
+}
+
+/*标题栏目——li标签设置 */
+.title_a li{
+	float: left;
+	background-color: white;		/*设置li的背景*/
+	list-style-type: none;			/*去掉li前面的点*/
+
+}
+
+/*设置标题栏目a标签的样式*/
+.title_a a{
+	padding: 0 50px;	/*每个a标签间隔*/
+	height: 84px;		/*a标签的高度*/
+	line-height: 90px;	/*行高*/
+	display: block;		/*变成块级元素*/
+	color: black;		/*文字颜色*/
+	text-decoration: none;		/*去下划线*/
+	/*border: 1px solid rebeccapurple;*/
+
+	text-align:center;		/*cneter参数让把文本排列到中间*/
+}
+
+/*设置标题栏目a标签的鼠标动作*/
+a:hover{
+	background-color: black;
+	color: white;
+}
+
+/*内容标题样式*/
+.body_bt{
+	text-align: center;			/*文字居中*/
+	background: #eee;			/*设置背景颜色*/
+	border-bottom: 1px solid brown;		/*设置底部边框颜色*/
+}
+
+
+/*-------------------------------------明星秀场-----------------------------------------------*/
+/*明星秀场框架样式为居中，样式为弹性布局*/
+.body_xc{
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	width: 1088px;
+	display: flex;			/*这个弹性布局相当好用*/
+}
+
+/*设置图片最宽*/
+.body_xc img{
+	width: 100%;
+	height:350.84px;
+}
+
+/*设置明星秀场的DL样式*/
+.body_xc dl{
+	/*border: 1px solid red;*/
+	width: 250px;
+	margin:20px;
+	background: #eee;
+}
+
+/*把dd标签的文字居中一下*/
+.body_xc dd{
+	text-align: center;
+}
+
+
+/*-----------------------------------------精美服饰-------------------------------------------*/
+/**/
+.body_fs{
+	margin: 0 auto;
+	width: 1088px;
+	height: 1100px;
+	/*border: 1px solid brown;*/
+
+}
+
+.body_fs_1{
+	margin: 30px ;
+
+}
+
+
+.body_fs dl{
+	position: relative;
+	/*border: 1px solid brown;*/
+	float: left;
+}
+
+
+.body_fs img{
+	width: 232px;
+	height:350.84px;
+
+
+
+}
+.body_fs_1 dt{
+	position: absolute;
+	margin: 20px;
+	left: 0;
+	top: 0;
+
+}
+.body_fs_1 img{
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+
+.body_fs_1 img:hover{
+	opacity: 0;
+}
+
+
+.body_fs_tt{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin: 20px;
+
+}
+
+.body_fs_tt img{
+	width: 80px;
+	height: 80px;
+}
+
+
+/*修改dd的样式*/
+.body_fs_dd{
+	margin: 400px 0 0 20px;			/*设置dd的位子*/
+	width: 232px;
+	/*border: 1px solid red;*/
+	text-align: center;
+	background: #eee;
+}
+
+
+/*原价现价模块*/
+ .price{
+	 text-decoration: line-through;		/*横线*/
+ }
+
+/* 把现价变成红色*/
+.cur-price{
+	color: red;
+}
+
+
+
+
+/*修改点击购买样式*/
+.body_fs button{
+	width: 100%;
+}
+
+/*定制设置父绝对定位以及盒子大小*/
+.group{
+	position: relative;
+	/*border: 1px solid red;*/
+	height: 900px;
+}
+
+
+/**/
+.group_dz{
+	text-align: center;
+	width: 500px;
+	position: absolute;
+	/*border: 1px solid red;*/
+	right: 100px;
+	top: 50px;
+	color: white;
+}
+
+.group_logo{
+	position: absolute;
+	right: 600px;
+	top: 50px;
+}
+
+/*页脚*/
+.footer{
+	/*border: 1px solid red;*/
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	background: darkolivegreen;
+	color: white;
+}
+.footer p{
+	padding: 20px;
+}
+

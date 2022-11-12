@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验报告6</title>
+    <script type="text/javascript">
+
+
+    </script>
+</head>
+<body>
+
+<!--    <script type="text/javascript">-->
+<!--        var arr =new Array()-->
+<!--        arr[1]=123;-->
+<!--        arr[3]="hi,world";-->
+<!--        arr[5]=true-->
+<!--        console.log(arr)-->
+<!--        console.log(arr.length)-->
+<!--    </script>-->
+
+<!--新建数组a 并赋值“A”“S"“D"，新建数组b并赋值“X”“Y”“Z”，新建数组f并赋值1，5，2，3，4，新建数组c、d、e进行如下操作。
+1)将数组a和b合并到数组c并输出数组C。
+2)删除数组c的第一个元素和最后一个元素并输出数组C。
+3)在数组c尾部增加三个元素“b”“n”“m”，输出数组C。
+4)在数组c开头增加三个元素“q”“w”“e”，输出数组C。
+5)截取数组c下标2到下标4的元素，并赋值给数组d,输出新数组d。
+6)将数组d转换为字符串s1,使用空格作为分隔符，输出字符串s1。
+7)创建字符串s2并赋值“北京，上海，广州”，以逗号为分隔符，将字符串转到数组e,输出数组e。
+8）选出数组f中比2大的数，组成新的数组g，并将数组g排序后输出。
+9）分别使用循环和reduce方法，求出数组f的和。
+10）将数组f的下标元素增加2，组成新的数组h,并输出数组h-->
+
+
+<!--    <script type="text/javascript">-->
+<!--        var a =["A","S","D"];-->
+<!--        var b =["X","Y","Z"];-->
+<!--        var f =[1,5,2,3,4];-->
+<!--        var c =new Array();-->
+<!--        var d =[];-->
+<!--        var e =new Array();-->
+<!--    //1)将数组a和b合并到数组c并输出数组C。-->
+<!--        c=a.concat(b);-->
+<!--        document.write(c);-->
+<!--        document.write("</br>");-->
+
+<!--    //2)删除数组c的第一个元素和最后一个元素并输出数组C。-->
+<!--        // c.length=5-->
+<!--        c.pop()     //删除尾部值，并返回值-->
+<!--        c.shift()   //删除头部值，并返回删除值-->
+<!--        document.write(c);-->
+<!--        document.write("</br>");-->
+<!--    //3)在数组c尾部增加三个元素“b”“n”“m”，输出数组C。-->
+<!--        //c[c.length]="b"     //在队尾单独添加一个元素-->
+<!--        c.push("b","n","m")     //在队尾添加多个元素-->
+<!--        document.write(c);-->
+<!--        document.write("</br>");-->
+<!--    //4)在数组c开头增加三个元素“q”“w”“e”，输出数组C。-->
+<!--        c.unshift("q","w","e");-->
+<!--        document.write(c);-->
+<!--        document.write("</br>");-->
+<!--    //5)截取数组c下标2到下标4的元素，并赋值给数组d,输出新数组d。-->
+<!--        d=c.slice(2,4)-->
+<!--        document.write(d);-->
+<!--        document.write("</br>");-->
+<!--    //6)将数组d转换为字符串s1,使用空格作为分隔符，输出字符串s1。-->
+<!--        var s1=d.join(" ")      //把数组转换成字符串，括号中的是规定的符号，用""包起来，默认的是逗号(，)-->
+<!--        //document.write(typeof (s1));-->
+<!--        document.write(s1);-->
+<!--        document.write("</br>");-->
+<!--    //7)创建字符串s2并赋值“北京，上海，广州”，以逗号为分隔符，将字符串转到数组e,输出数组e。-->
+<!--        var s2="北京，上海，广州"-->
+<!--        e=s2.split(",")            //把字符串用，号切割成数组，逗号后面+要切割的长度，默认为全部-->
+<!--        document.write(e);-->
+<!--        document.write("</br>");-->
+<!--    //8）选出数组f中比2大的数，组成新的数组g，并将数组g排序后输出。-->
+<!--        var g=[]-->
+<!--        for (var i=0;i<f.length;i++){-->
+<!--            if (f[i]>2){-->
+<!--                g.push(f[i])-->
+<!--            }-->
+<!--        }-->
+<!--        g.sort()    //从大到小排序-->
+<!--        document.write(g);-->
+<!--        document.write("</br>");-->
+<!--    //9）分别使用循环和reduce方法，求出数组f的和。-->
+<!--        var h1=0,h2=0;-->
+<!--        for (var i=0;i<f.length;i++){-->
+<!--            h1+=f[i];-->
+<!--        }-->
+<!--        h2=f.reduce((a,b)=>a+b,0);-->
+<!--        document.write(h1);-->
+<!--        document.write("</br>");-->
+<!--        document.write(h2);-->
+<!--        document.write("</br>");-->
+<!--    //10）将数组f的下标元素增加2，组成新的数组h,并输出数组h-->
+<!--        var h=new Array()-->
+<!--        for (var i=0;i<f.length+2;i++){-->
+<!--            h.push(f[i])-->
+<!--        }-->
+<!--        document.write(h);-->
+<!--        document.write("<br>"+"f数组长度："+f.length);-->
+<!--        document.write("<br>"+"h数组长度："+h.length);-->
+<!--        document.write("</br>");-->
+<!--    </script>-->
+
+
+<!--&lt;!&ndash;1. 请使用4种方法创建日期对象。&ndash;&gt;-->
+<!--<script>-->
+<!--    var date = new Date();-->
+<!--    var d1 = new Date("October 13, 1998, 11:13:00");-->
+<!--    var d2 = new Date(98,5,24);-->
+<!--    var d3 = new Date(98,5,24,11,33,0);-->
+<!--    document.write(date,d1,d2,d3)-->
+<!--</script>-->
+
+
+
+
+
+<!--2. 计算当前日期距离国庆节（10.1）还有多久？分别用毫秒，秒，分钟，小时，天显示结果。-->
+<!--1) 具体代码：-->
+
+<!--<h1 id="time6">-->
+<!--    <span></span>天-->
+<!--    <span></span>小时-->
+<!--    <span></span>分-->
+<!--    <span></span> 秒-->
+<!--</h1>-->
+<!--<script>-->
+<!--    var time5=document.getElementById('time6').getElementsByTagName('span')-->
+<!--    function time(){-->
+<!--        var time1=new Date().getTime();       //获取当前时间-->
+<!--        var time3=new Date(2023,10,1,0,0,0).getTime();-->
+<!--        var time4=(time3-time1)/1000;-->
+<!--        var day=parseInt(time4/86400)-->
+<!--        var hour=parseInt(time4%86400/3600)-->
+<!--        var mins=parseInt(time4%86400%3600/60)-->
+<!--        var secs=parseInt(time4%60)-->
+<!--        // return document.write('<h2>'+day+'天'+hour+'小时'+mins+'分'+secs+'秒'+'<h2>')-->
+<!--        time5[0].innerHTML=day;-->
+<!--        time5[1].innerHTML=hour;-->
+<!--        time5[2].innerHTML=mins;-->
+<!--        time5[3].innerHTML=secs;-->
+<!--    }-->
+<!--    setInterval("time()","1000")-->
+<!--</script>-->
+
+<!--3. 编程显示当前日期与时间-->
+<!--<div id="time">-->
+<!--    <span></span>年-->
+<!--    <span></span>月-->
+<!--    <span></span>日-->
+<!--    <span></span>时-->
+<!--    <span></span>分-->
+<!--    <span></span>秒-->
+<!--    星期<span></span>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--    var time =document.getElementById("time").getElementsByTagName("span");-->
+<!--    function runtime(){-->
+<!--        var oDate =new Date();-->
+<!--        var iYear=oDate.getFullYear();-->
+<!--        var iMonth=oDate.getMonth()+1;-->
+<!--        var iDate=oDate.getDate();-->
+<!--        var iHours=oDate.getHours();-->
+<!--        var iMinutes=oDate.getMinutes();-->
+<!--        var iSeconds=oDate.getSeconds();-->
+<!--        var iDay=['周日','周一','周二','周三','周四','周五','周六'][oDate.getDay()];-->
+<!--        time[0].innerHTML=iYear;-->
+<!--        time[1].innerHTML=iMonth;-->
+<!--        time[2].innerHTML=iDate;-->
+<!--        time[3].innerHTML=iHours;-->
+<!--        time[4].innerHTML=iMinutes;-->
+<!--        time[5].innerHTML=iSeconds;-->
+<!--        time[6].innerHTML=iDay;-->
+<!--    }-->
+<!--    setInterval("runtime()","1000")-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    // 1）请打印出student在字符串info中的位置；-->
+<!--    var info="I am a student, I am 13 years old!"-->
+<!--    document.write(info.search(/st*t/ig));-->
+<!--    document.write("<br>")-->
+<!--    // 2）请将student换成teacher;-->
+<!--    document.write(info.replace(/s\w{0,5}t/ig,'teacher'))-->
+<!--    document.write("<br>")-->
+<!--    // 3）请打印出info中的单词及单词个数；-->
+<!--    document.write(info.match(/[A-z]+/g))-->
+<!--    document.write("<br>")-->
+<!--    document.write(info.match(/[A-z]+/g).length)-->
+<!--    document.write("<br>")-->
+<!--    // 4）打印出info中的所有数字；-->
+<!--    document.write(info.match(/[0-9]{1,10}/g))-->
+<!--</script>-->
+
+
+<p>登录账号: <input type="text" id="userName" />
+    <span id="testUserName"></span>会员登录账号，一旦注册成功，不可修改
+</p>
+<p>密码: <input type="password" id="pass" />
+    <span id="testPass"></span>
+</p>
+<p>确认密码: <input type="password" id="pass2" />
+    <span id="testPass2"></span> 密码由6-12个英文字母(区分大小写)或数字组成
+</p>
+<p>采购商名称: <input type="text"  />店铺公司或机构名称</p>
+<p>联系人: <input type="text" /></p>
+<p>手机: <input type="text" id="phone" />
+    <span id="testPhone"></span> 用于工作人员和您联系，并接收账号开通短信
+</p>
+<p>邮箱: <input type="text" id="mail" /><span id="testMail"></span></p>
+<script>
+    var testUserName=document.getElementById("testUserName");
+    var userName =document.getElementById("userName");
+    var pass=document.getElementById("pass");
+    var testpass=document.getElementById("testPass");
+    var pass2=document.getElementById("pass2");
+    var testPass2=document.getElementById("testPass2");
+    var phone=document.getElementById("phone");
+    var testPhone=document.getElementById("testPhone");
+    var mail=document.getElementById("mail");
+    var testMail=document.getElementById("testMail");
+    var zUser=/^\D\w{5,15}$/                       //用户名
+    var zPass=/([0-9]|[A-z]){4,15}$/                //密码
+    var zPhone=/^1[34578][0-9]{9}$/                //手机
+    var zMail=/^\w+@\w+\.(com|cn|net|com\.cn)$/        //邮箱
+
+
+    userName.onblur=function (){
+        if(zUser.test(userName.value)){
+            testUserName.innerHTML="设置成功！"
+        }else{
+            testUserName.innerHTML="设置失败！"
+        }
+    }
+    pass.onblur=function (){
+        if(zPass.test(pass.value)){
+            testpass.innerHTML="密码符合要求"
+        }else{
+            testpass.innerHTML="密码不符合要求"
+        }
+        pass2.onblur=function (){
+            if(pass.value==pass2.value){
+                testPass2.innerHTML=""
+            }else {
+                testPass2.innerHTML="密码与前面不一致"
+            }
+        }
+    }
+    phone.onblur=function (){
+        if (zPhone.test(phone.value)){
+            testPhone.innerHTML=""
+        }else {
+            testPhone.innerHTML="手机格式错误！"
+        }
+    }
+
+    mail.onblur=function (){
+        if (zMail.test(mail.value)){
+            testMail.innerHTML=""
+        }else {
+            testMail.innerHTML="邮箱格式错误！"
+        }
+    }
+
+</script>
+
+<!--</body>-->
+<!--</html>-->
